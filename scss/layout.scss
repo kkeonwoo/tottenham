@@ -1,0 +1,197 @@
+@import "vars";
+@import "mixin";
+
+// sass list  (a.k.a js array)
+$colors: (rgb(228, 121, 0), rgb(26, 224, 0), rgb(5, 147, 212), rgb(156, 6, 216), rgb(206, 24, 39), rgb(138, 51, 1));
+
+html {
+}
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #111;
+  // prettier-ignore
+  background-image: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), 
+                                                     rgba(255, 255, 255, 0.05) 1px, 
+                                                       0, transparent 50px);
+  background-color: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#header {
+  height: 60px;
+  background-color: #111836;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: fixed;
+  z-index: 99;
+}
+
+#logo {
+  img {
+    height: 40px;
+  }
+}
+
+#main {
+  padding: 100px 0;
+  #filter {
+    margin-bottom: 50px;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        margin: 0 5px;
+        padding: 20px 50px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 100px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+        user-select: none;
+        &.on {
+          background-color: #f00;
+        }
+      }
+    }
+  }
+  #works {
+    .itemList {
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 33%;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        perspective: 800px;
+        &:hover {
+          h2,
+          .desc {
+            color: #fff;
+          }
+          > a {
+            background-color: #111836;
+            z-index: 10;
+            transform: translateZ(50px) translateY(-20px) rotateY(180deg);
+            &:before {
+              height: 6px;
+              background-color: #e0e721;
+            }
+          }
+          h2,
+          .desc,
+          .point {
+            transform: rotateY(180deg);
+          }
+          .point {
+            left: 40px;
+            right: auto;
+          }
+          .img {
+            box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.3);
+            img {
+              transform: scale(1.05);
+            }
+          }
+        }
+        a {
+          transform-style: preserve-3d;
+          border-radius: 10px;
+          box-sizing: border-box;
+          background-color: #fff;
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+          display: block;
+          padding: 30px;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.4s ease-in-out;
+          &::before {
+            @include pseudo;
+            @include box(80%, 3px, #0bf);
+            bottom: 20.5%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 4px;
+            z-index: 2;
+            transition: all 0.25s ease-in-out 0.4s;
+          }
+        }
+        h2 {
+          font-size: 24px;
+          font-weight: 700;
+          margin: 20px 0;
+        }
+        .desc {
+          line-height: 1.5;
+          color: #666;
+        }
+        .point {
+          position: absolute;
+          font-size: 48px;
+          color: #f00;
+          font-weight: 700;
+          right: 40px;
+          bottom: 50px;
+        }
+        .img {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          img {
+            width: 100%;
+            transition: all 0.25s ease-in-out 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fancybox_caption {
+  a {
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}
+.with-fancybox .cursor {
+  display: none;
+}
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1000px;
+  left: 300px;
+  top: 300px;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  overflow: hidden;
+  @include longShadow(darken(#f00, 10), 50);
+}
+
+.txtBox {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  display: none;
+}

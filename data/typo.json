@@ -1,0 +1,164 @@
+{
+  "imageFolder": "images/",
+  "typoList": [
+    {
+      "img": "01.png",
+      "Name": "Hugo Lloris",
+      "Native": "Nice, France",
+      "Num": 1,
+      "category": "GK",
+      "link": "http://www.daum.net"
+    },
+    {
+      "img": "02.png",
+      "Name": "Matt Doherty",
+      "Native": "Dublin, Ireland",
+      "Num": 2,
+      "category": "DF",
+      "link": "http://www.daum.net"
+    },
+    {
+      "img": "03.png",
+      "Name": "Sergio Reguilón",
+      "Native": "Madrid, Spain",
+      "Num": 3,
+      "category": "DF",
+      "link": "http://www.daum.net"
+    },
+    {
+      "img": "04.png",
+      "Name": "Cristian Romero",
+      "Native": "Córdoba, Argentina",
+      "Num": 4,
+      "category": "DF",
+      "link": "http://www.daum.net"
+    },
+    {
+      "img": "05.png",
+      "Name": "Pierre-Emile Højbjerg",
+      "Native": "Copenhagen, Denmark",
+      "Num": 5,
+      "category": "MF",
+      "link": "http://www.daum.net"
+    },
+    {
+      "img": "06.png",
+      "Name": "Davinson Sanchez",
+      "Native": "Caloto, Colombia",
+      "Num": 6,
+      "category": "DF"
+    },
+    {
+      "img": "07.png",
+      "Name": "Heung-Min Son",
+      "Native": "Chuncheon, South Korea",
+      "Num": 7,
+      "category": "FW"
+    },
+    {
+      "img": "08.png",
+      "Name": "Harry Winks",
+      "Native": "Hemel Hempstead, England",
+      "Num": 8,
+      "category": "MF"
+    },
+    {
+      "img": "09.png",
+      "Name": "Harry Kane",
+      "Native": " London, England",
+      "Num": 10,
+      "category": "FW"
+    },
+    {
+      "img": "10.png",
+      "Name": "Emerson Royal",
+      "Native": "São Paulo, Brazil",
+      "Num": 12,
+      "category": "DF"
+    },
+    {
+      "img": "11.png",
+      "Name": "Joe Rodon",
+      "Native": "Llangyfelach, Wales",
+      "Num": 14,
+      "category": "DF"
+    },
+    {
+      "img": "12.png",
+      "Name": "Eric Dier",
+      "Native": "Cheltenham, England",
+      "Num": 15,
+      "category": "DF"
+    },
+    {
+      "img": "13.png",
+      "Name": "Ryan Sessegnon",
+      "Native": "Roehampton, England",
+      "Num": 19,
+      "category": "DF"
+    },
+    {
+      "img": "14.png",
+      "Name": "Dejan Kulusevski",
+      "Native": "Stockholm, Sweden",
+      "Num": 21,
+      "category": "FW"
+    },
+    {
+      "img": "15.png",
+      "Name": "Pierluigi Gollini",
+      "Native": "Bologna, Italy",
+      "Num": 22,
+      "category": "GK"
+    },
+    {
+      "img": "16.png",
+      "Name": "Steven Bergwijn",
+      "Native": "Amsterdam, Netherlands",
+      "Num": 23,
+      "category": "FW"
+    },
+    {
+      "img": "17.png",
+      "Name": "Japhet Tanganga",
+      "Native": "London, England",
+      "Num": 25,
+      "category": "DF"
+    },
+    {
+      "img": "18.png",
+      "Name": "Lucas Moura",
+      "Native": "São Paulo, Brazil",
+      "Num": 27,
+      "category": "FW"
+    },
+    {
+      "img": "19.png",
+      "Name": "Oliver Skipp",
+      "Native": "Welwyn Garden City, England",
+      "Num": 29,
+      "category": "MF"
+    },
+    {
+      "img": "20.png",
+      "Name": "Rodrigo Bentancur",
+      "Native": " Nueva Helvecia, Uruguay",
+      "Num": 30,
+      "category": "MF"
+    },
+    {
+      "img": "21.png",
+      "Name": "Ben Davies",
+      "Native": "Neath, Wales",
+      "Num": 33,
+      "category": "DF"
+    },
+    {
+      "img": "22.png",
+      "Name": "Brandon Austin",
+      "Native": "Hemel Hempstead, England",
+      "Num": 40,
+      "category": "GK"
+    }
+  ]
+}
